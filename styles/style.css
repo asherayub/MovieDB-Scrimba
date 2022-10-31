@@ -64,6 +64,14 @@ body {
   color: #fff;
   text-transform: capitalize;
   text-decoration: none;
+  border: 2px solid #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  transition: background-color 300ms ease-in-out;
+}
+.header__heading p a:hover,
+.header__heading p a:active {
+  background-color: #028402;
 }
 /***** End HEADER x WRAPPER DIV *****/
 

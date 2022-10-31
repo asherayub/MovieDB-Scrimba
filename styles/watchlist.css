@@ -15,12 +15,25 @@
   text-align: center;
   width: 100vw;
 }
+.header__heading > div > a{
+  text-decoration: none;
+  color: #fff;
+}
 .header__heading button {
   color: #fff;
   text-transform: capitalize;
   text-decoration: none;
   background-color: transparent;
   font-size: 1.5rem;
-  border: none;
+  border: 2px solid #fff;
+  padding: 1rem;
   cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+}
+.header__heading button:hover,
+.header__heading button:active {
+  background-color: #9f0202;
+}
+.add {
+  display: none;
 }
