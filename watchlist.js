@@ -8,3 +8,4 @@ document.getElementById("clear-watchlist").addEventListener("click", () => {
     document.getElementById("notifier").style.top = "-100%";
   }, 1500);
 });
+ 
