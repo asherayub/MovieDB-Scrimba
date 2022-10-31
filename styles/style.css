@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+#notifier {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 99;
+  background-color: #028402;
+  transition: top 200ms ease-in-out;
+  text-align: center;
+  width: 100vw;
+}
+/***** HEADER x WRAPPER DIV *****/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/THJJRUhNlEc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: brightness(10%);
+  -webkit-backdrop-filter: brightness(10%);
+}
+.header__heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.header__heading h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+}
+.header__heading p a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/***** End HEADER x WRAPPER DIV *****/
+
+/***** SEARCH DIV *****/
+.search__input {
+  margin: 1rem;
+  border: 2px solid #d1d5db;
+  height: 50px;
+  min-height: 50px;
+  padding-left: 1rem;
+  width: 90vw;
+  border-radius: 10px;
+}
+.search__input form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+}
+form input,
+form button {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+}
+form input {
+  width: 100%;
+  outline: none;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+form button {
+  margin-left: auto;
+  background-color: #f9fafb;
+  font-weight: 600;
+  padding: 0 2.5rem;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1rem;
+}
+/***** End SEARCH DIV *****/
+
+/***** MOVIES DIV *****/
+.movies {
+  height: auto;
+  width: 100vw;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* margin: 0 20px; */
+}
+.movies h2 {
+  color: #dfdddd;
+}
+.movie {
+  margin: 0 1rem;
+  display: flex;
+  border-bottom: 2px solid #dfdddd;
+}
+.movie .poster {
+  height: 200px;
+  width: 140px;
+}
+.movie .poster img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* margin: 0.5rem; */
+  padding: 1rem;
+}
+.movie .text {
+  width: 80vw;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text .r1 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.fa-star:before {
+  color: #fec654 !important;
+}
+.text .r2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.text .r2 .add {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.text .r2 .add .fa-circle-plus {
+  transform: scale(1.5);
+  margin-right: 5px;
+}
+/***** End MOVIES DIV *****/
+@media (max-width: 365px) {
+  .movie {
+    flex-direction: column;
+  }
+  .poster {
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .header__heading {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text .r2 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+  .text .r3 .plot {
+    font-size: 0.8rem;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 870px) {
+  .movie {
+    padding: 20px 0;
+    width: 90vw;
+    max-width: 90vw;
+  }
+  .movie .poster {
+    display: flex;
+    align-items: center;
+  }
+  .movie .poster img {
+    padding: 0;
+    height: auto;
+  }
+  .text .r1 .name {
+    font-size: 1rem;
+  }
+}

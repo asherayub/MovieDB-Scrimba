@@ -1,0 +1,26 @@
+@import "style.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+
+#notifier {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 99;
+  background-color: #9f0202;
+  transition: top 200ms ease-in-out;
+  text-align: center;
+  width: 100vw;
+}
+.header__heading button {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
